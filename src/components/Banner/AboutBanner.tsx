@@ -1,7 +1,7 @@
 export default function AboutBanner({ image, blur }: { image: string; blur: string }) {
     return (
         <div
-            className={`lg:w-[1160px] blur-[${blur}] transition duration-500 ease-in-out hover:opacity-80 h-230 overflow-hidden rounded-xl`}
+            className={`lg:w-[1160px] blur-[${blur}] transition duration-500 ease-in-out hover:opacity-80 h-210 overflow-hidden rounded-xl`}
         >
             <img src={image} alt="" className="w-full h-full object-cover" />
         </div>
