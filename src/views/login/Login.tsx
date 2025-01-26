@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { motion, AnimatePresence } from "motion/react";
+import { motion } from "motion/react";
 import { MdLogin } from "react-icons/md";
 
 export default function Login() {
