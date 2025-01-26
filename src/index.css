@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+body {
+    @apply bg-slate-700 text-white;
+    font-family: "Inter", serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+    color: rgb(255, 255, 255);
+    background: rgb(13, 13, 13);
+}
