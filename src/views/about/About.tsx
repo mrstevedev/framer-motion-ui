@@ -15,7 +15,7 @@ export default function About() {
         if (isInView || isInView2) mainControls.start("visible");
     }, [isInView, isInView2, mainControls]);
 
-    setTimeout(() => setBlur("none"), 1000);
+    setTimeout(() => setBlur("0px"), 1000);
 
     return (
         <Fragment>
