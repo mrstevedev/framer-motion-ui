@@ -1,7 +1,6 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import { MdOutlineShoppingBag } from "react-icons/md";
-import { Fragment } from "react/jsx-runtime";
 
 export type NavProps = {
     tabs: { id: string; label: string }[];
@@ -14,28 +13,26 @@ export default function Nav({ tabs, activeTab, onTabClick }: NavProps) {
         <div className="flex z-10 capitalize items-center">
             <div className="mx-2">
                 {tabs.map((tab) => (
-                    <Fragment>
-                        <Link
-                            key={tab.id}
-                            to={tab.id}
-                            onClick={() => onTabClick(tab.id)}
-                            className={`${
-                                activeTab === tab.id ? "" : "hover:text-white/60"
-                            } relative rounded-full px-2 py-1.5 text-xs font-medium text-white transition focus-visible:outline-2`}
-                            style={{
-                                WebkitTapHighlightColor: "transparent"
-                            }}
-                        >
-                            {activeTab === tab.id && (
-                                <motion.span
-                                    layoutId="bubble"
-                                    className="absolute inset-0 z-10 bg-white mix-blend-difference rounded-3xl"
-                                    transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
-                                ></motion.span>
-                            )}
-                            {tab.label}
-                        </Link>
-                    </Fragment>
+                    <Link
+                        key={tab.id}
+                        to={tab.id}
+                        onClick={() => onTabClick(tab.id)}
+                        className={`${
+                            activeTab === tab.id ? "" : "hover:text-white/60"
+                        } relative rounded-full px-2 py-1.5 text-xs font-medium text-white transition focus-visible:outline-2`}
+                        style={{
+                            WebkitTapHighlightColor: "transparent"
+                        }}
+                    >
+                        {activeTab === tab.id && (
+                            <motion.span
+                                layoutId="bubble"
+                                className="absolute inset-0 z-10 bg-white mix-blend-difference rounded-3xl"
+                                transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+                            ></motion.span>
+                        )}
+                        {tab.label}
+                    </Link>
                 ))}
             </div>
             <Link to="#" className="relative">
