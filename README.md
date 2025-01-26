@@ -32,7 +32,7 @@ To check if npm is installed, run: `npm -v`
 
 1.  **Clone this repository** to your local machine:
 
-    `git clone https://github.com/your-username/react-framer-motion.git cd react-framer-motion`
+    `git clone https://github.com/mrstevedev/framer-motion-ui.git cd framer-motion-ui`
 
 2.  **Install dependencies**:
 
