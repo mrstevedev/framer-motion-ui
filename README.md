@@ -52,4 +52,4 @@ Using Yarn: `yarn dev`
 
 Or using Pnpm: `pnpm dev`
 
-This will open the app in your default browser at http://localhost:3000.
+This will open the app in your default browser at http://localhost:5173.
